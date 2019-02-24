@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册1号店</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+</head>
+<body>
+<!-- header -->
+	<div class="regist_header clearfix">
+		<div class="wrap">
+			<a href="javascript:;" class="logo">
+				<img src="img/loginlogo.jpg" alt="1号店"/>
+			</a>
+			<div class="regist_header_right clearfix">
+				<div class="help_wrap">
+					<a href="javascript:;" class="hd_menu">
+						<s class="help_ico"></s>
+						帮助中心
+					</a>
+					<div class="hd_menu_list">
+						<ul>
+							<li>
+								<a href="javascript:;">包裹跟踪</a>
+							</li>
+							<li>
+								<a href="javascript:;">常见问题</a>
+							</li>
+							<li>
+								<a href="javascript:;">在线退换货</a>
+							</li>
+							<li>
+								<a href="javascript:;">在线投诉</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="welcome">
+					您好，欢迎光临1号店！
+					<a href="javascript:;" class="blue_link">请登录</a>
+				</span>
+			</div>
+		</div>
+	</div>	
+<!-- section -->
+	<div class="y_regist_wrap">
+		<!-- 背景小图标 -->
+		<div class="r_icon1 sec_bg"></div>
+		<div class="r_icon2 sec_bg"></div>
+		<div class="r_icon3 sec_bg"></div>
+		<div class="r_icon4 sec_bg"></div>
+		<div class="r_icon5 sec_bg"></div>
+
+		<div class="y_regist_model">
+			<h4 class="y_regist_tit">1号店注册</h4>
+			<div class="y_regist_form">
+				<ul class="clearfix">
+					<li>
+						<div class="y_same_item register_person">
+							<input class="ysame_input" type="text" id="username">
+							<span class="y_same_label register_one">用户名</span>
+						</div>
+						<div class="y_regist_tips y_regist_tips_red reg_zzone" style="top:-8px">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words">4-20位字符，可由英文、数字或符号“_”组成</div>
+							</div>
+						</div>
+						<div class="y_regist_right reg_right_one" style="width: 23px;height: 23px;position: absolute;left: 348px;top: 14px;background: url(img/regist_new.png) no-repeat -50px 0;display: none"></div>
+					</li>
+					<li class="ifocus">
+						<div class="y_same_item register_phone">
+							<input class="ysame_input" type="text" id="userphone">
+							<span class="y_same_label register_two">手机号</span>
+						</div>
+						<div class="y_regist_tips y_regist_tips_red reg_zztwo" style="top:-6px">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words">请填写正确的手机号码，以便接收订单通知、找回密码等</div>
+							</div>
+						</div>
+						<div class="y_regist_right reg_right_two" style="width: 23px;height: 23px;position: absolute;left: 348px;top: 14px;background: url(img/regist_new.png) no-repeat -50px 0;display: none"></div>
+					</li>
+					<li class="ishort_li" id="validCodeDiv" style="display: none">
+						<div class="y_same_item">
+							<input class="ysame_input" type="text" id="validCode">
+							<span class="y_same_label">验证码</span>
+						</div>
+						<a class="r_yzm_code" id="changevalidate" href="javascript:;">
+							<img src="" alt=""/>
+							<span class="yzm_change_mask">
+								<em></em>
+								<i>换一张</i>
+							</span>
+						</a>
+					</li>
+					<li class="ishort_li ipt_right" id="validPhoneCodeDiv">
+						<div class="y_same_item register_check">
+							<input class="ysame_input" type="text" id="validPhoneCode">
+							<span class="y_same_label register_verify">短信验证码</span>
+						</div>
+						<a class="same_code_btn" href="javascript:;">获取验证码</a>
+						<div class="y_regist_tips y_regist_tips_red reg_zzthere" style="top:-14px">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words">如无法接受验证码，请重启手机并确认短信未被拦截！4G用户请关闭4G网络进行接收</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="y_same_item register_pass">
+							<input class="ysame_input" type="password" id="password">
+							<span class="y_same_label register_four">设置密码</span>
+						</div>
+						<div class="y_regist_tips y_regist_tips_red reg_zzfour" style="top:-2px">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words">6-20个大小写英文字母、符号或数字的组合</div>
+							</div>
+						</div>
+						<div class="y_regist_right reg_right_there" style="width: 23px;height: 23px;position: absolute;left: 348px;top: 14px;background: url(img/regist_new.png) no-repeat -50px 0;display: none"></div>
+						<div class="y_regist_tips_keywords strength_l">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words y_tips_words_key">
+									<em class="em_redA"></em>
+									<em></em>
+									<em></em>
+									<b class="em_words">低</b>
+								</div>
+							</div>
+						</div>
+						<div class="y_regist_tips_keywords strength_m">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words y_tips_words_key">
+									<em class="em_yellowA1"></em>
+									<em class="em_yellowA1"></em>
+									<em></em>
+									<b class="em_words">中</b>
+								</div>
+							</div>
+						</div>
+						<div class="y_regist_tips_keywords strength_h">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words y_tips_words_key">
+									<em class="em_greenA1"></em>
+									<em class="em_greenA1""></em>
+									<em class="em_greenA1"></em>
+									<b class="em_words">高</b>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="y_same_item register_true">
+							<input class="ysame_input" type="password" id="password2">
+							<span class="y_same_label register_five">确认密码</span>
+						</div>
+						<div class="y_regist_tips y_regist_tips_red reg_zzfive" style="top:2px">
+							<div class="y_regtip_rel">
+								<i></i>
+								<div class="y_tips_words">请再次输入密码</div>
+							</div>
+						</div>
+						<div class="y_regist_right reg_right_four" style="width: 23px;height: 23px;position: absolute;left: 348px;top: 14px;background: url(img/regist_new.png) no-repeat -50px 0;display: none"></div>
+					</li>
+					<li>
+						<div class="y_agreement_word">
+							点击注册，表示您同意1号店
+							<a href="javascript:;" target="_blank">《服务协议及隐私声明》</a>
+						</div>
+						<a class="y_agreement_btn" id="register_button" href="javascript:;">
+							同意协议并注册
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- footer -->
+	<div id="simplefooter">
+		<a href="javascript:;" target="_blank">沪ICP备16050468号</a>|
+		<a href="javascript:;">沪B2-20170039</a>|
+		<a href="javascript:;" target="_blank">营业执照</a>
+		<p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
